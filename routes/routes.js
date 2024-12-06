@@ -1,8 +1,8 @@
 const express = require('express')
 const router = express.Router()
 
-router.get('/', (req, res) => {
-    res.send(`Ambiente configurado`)
-})
+const {concatenaString} = require('../controllers/routerController')
+
+router.get('/', concatenaString)
 
 module.exports = router
